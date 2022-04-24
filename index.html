@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKZZIN | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="olho.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-login">
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>            
+                <div class="textfield">
+                    <label for="nome">Usuário</label>
+                    <input type="text" placeholder="Usuário" name="usuario" id="usuario" required>
+                </div>
+                <div class="textfield">
+                    <label for="nome">Senha</label>
+                    <input type="password" placeholder="Senha" name="senha" id="senha" required>
+                </div>
+                <button class="btn-login" onclick="logar(); "returnfalse">Logar</button>
+                <div class="textlink">
+                    <p>Ainda não tem uma conta?<a href="http://127.0.0.1:5500/indexcadastro.html">Criar conta</a></p>
+                </div>
+                <div>
+                    <script>
+                        function logar(){
+                            var Usuário = document.getElementById('usuario').value;
+                            var Senha = document.getElementById('senha').value;
+                            if(Usuário == "LK" && Senha == "1313"){
+                                
+                                location.href = "https://www.youtube.com/watch?v=O91DT1pR1ew";
+                            }else{
+                                alert('Usuario ou senha incorretos');
+                            }
+                
+                        }
+                    </script>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+
+

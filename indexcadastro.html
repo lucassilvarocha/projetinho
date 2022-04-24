@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LKZZIN | Cadastro</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+    <link rel="shortcut icon" href="olho.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main-login">
+        <div class="right-login">
+            <div class="card-login">
+                <h1>CADASTRO</h1>   
+                      
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" placeholder="Usuário" name="usuario" id="usuario" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Senha" name="senha" id="senha" required>
+                </div>
+                <button class="btn-login" onclick="logar(); "returnfalse">Entrar</button>
+                <div>
+                    <script>
+                        function logar(){
+                            var Usuário = document.getElementById('usuario').value;
+                            var Senha = document.getElementById('senha').value;
+                            if(Usuário == "LK" && Senha == "1313"){
+                                
+                                location.href = "index.html";
+                            }else{
+                                alert('Usuario ou senha incorretos');
+                            }
+                
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
